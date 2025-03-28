@@ -89,3 +89,9 @@ config  SRAM1_REGION
 	default "SRAM1" if $(dt_nodelabel_enabled,sram1)
 	help
 	    Provide config SRAM1 region
+
+config  OSPI1_XIP_REGION
+	string
+	default "ospi1" if $(dt_nodelabel_enabled,ospi1)
+	help
+	    Configure OSPI1 XIP memory mapped region name
